@@ -1,0 +1,154 @@
+{% extends "base.html" %}
+
+{% block result %}
+{% load static %}
+
+<section class="hero-section"style="background-image: url('{% static "images/result.jpg" %}');height:800px;" >
+  <div class="container">
+    <h1 class="hero-title" data-aos="fade-down" data-aos-duration="1000" style="color:white;">
+      <b>RESULT & REVIEWS</b>
+    </h1>
+    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000"style="color: white;">
+      <b>EXPERT ASSIGNMENT RESULTS & REVIEWS..</b>
+    </p>
+  </div>
+</section> 
+
+
+    <div class="container py-5 position-relative">
+      <div class="row align-items-center g-5">
+        
+        <!-- Text Section -->
+        <div class="col-md-6 fade-in">
+          <h1 class="display-5 fw-bold mb-4"style="font-family: 'Times New Roman', Times, serif;">
+            <span class="gradient-text"style="font-family: 'Times New Roman', Times, serif;">Real Stories</span><br>from Real Customers
+          </h1>
+          <p class="lead mb-4"style="font-family: 'Times New Roman', Times, serif;">Discover how our clients transformed their businesses with our solutions. Authentic testimonials and success stories that inspire.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a class="btn btn-primary btn-lg"style="font-family: 'Times New Roman', Times, serif;" href="/result" role="button">Testimonials</a>
+            <a class="btn btn-outline-primary btn-lg"style="font-family: 'Times New Roman', Times, serif;" href="/megaoffer" role="button">Megaoffer's</a>
+            </div>
+        </div>
+    
+        <!-- Image + Testimonial Section -->
+        <div class="col-md-6 fade-in position-relative">
+          <div class="rounded shadow-lg overflow-hidden position-relative"data-aos="zoom-in"style="padding-top:30px; margin-top: 20px;">
+            <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=1074&q=80"
+                 class="img-fluid rounded" alt="Happy customers">
+            <div class="position-absolute bottom-0 start-0 end-0 p-3 testimonial-box">
+              <p class="mb-1 fw-semibold"style="color:white;font-family: 'Times New Roman', Times, serif;">"The testimonials on this platform helped us make the right decision for our business."</p>
+              <small class="text-muted" style="color:white;font-family: 'Times New Roman', Times, serif;">Sarah Johnson, Marketing Director</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reviews bg-dark" style="height:700px;padding-top:10px;margin-top:40px;border-radius: 15px;">
+        <div class="hover-underline bg-dark"style="margin-top: 40px;margin-bottom: 60px;color: aquamarine;font-size: 2.8rem; font-weight: bold;font-family: 'Times New Roman', Times, serif;"><b>Results and Reviews</b></div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <div class="slider">
+      <div class="slide-track" id="slideTrack">
+        <div class="slide"><img src="{% static 'results/result1.jpg' %}" alt="Result1"></div>
+        <div class="slide"><img src="{% static 'results/result2.jpg' %}" alt="Result2"></div>
+        <div class="slide"><img src="{% static 'results/result3.jpg' %}" alt="Result3"></div>
+        <div class="slide"><img src="{% static 'results/result4.jpg' %}" alt="Result4"></div>
+        <div class="slide"><img src="{% static 'results/result5.jpg' %}" alt="Result5"></div>
+        <div class="slide"><img src="{% static 'results/result6.jpg' %}" alt="Result6"></div>
+        <div class="slide"><img src="{% static 'results/result7.jpg' %}" alt="Result7"></div>
+        <div class="slide"><img src="{% static 'results/result8.jpg' %}" alt="Result8"></div>
+        <div class="slide"><img src="{% static 'results/result9.jpg' %}" alt="Result9"></div>
+        <div class="slide"><img src="{% static 'results/result10.jpg' %}" alt="Result10"></div>
+        <div class="slide"><img src="{% static 'results/result11.jpg' %}" alt="Result11"></div>
+        <div class="slide"><img src="{% static 'results/result12.jpg' %}" alt="Result12"></div>
+        <div class="slide"><img src="{% static 'results/result13.jpg' %}" alt="Result13"></div>
+        <div class="slide"><img src="{% static 'results/result14.jpg' %}" alt="Result14"></div>
+     
+      </div>
+    </div>
+    </div>
+
+    <div class="reviews bg-dark" style="height:500px;padding-top:10px;margin-top:25px;border-radius: 15px;">
+  <div class="hover-underline bg-dark"style="margin-top: 40px;margin-bottom: 60px;color: aquamarine;font-size: 2.8rem; font-weight: bold;font-family: 'Times New Roman', Times, serif;"><b>Our Clients Says</b></div>
+
+
+    <div class="d-flex justify-content-center">
+    <div class="container mt-5 " style="width: 100%;">
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+    
+        <!-- Slides -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h5>Devin Smith</h5>
+            <div class="stars">★★★★★</div>
+            <p>Got to know them through my colleague,<br>and I'm really thankful to him for suggesting this platform.</p>
+          </div>
+          <div class="carousel-item">
+            <h5>Susan Lee</h5>
+            <div class="stars">★★★★★</div>
+            <p>This platform exceeded my expectations.<br>Highly recommend to anyone!</p>
+          </div>
+          <div class="carousel-item">
+            <h5>Michael Brown</h5>
+            <div class="stars">★★★★☆</div>
+            <p>Great value and service.<br>Would definitely use again.</p>
+          </div>
+          <div class="carousel-item">
+            <h5>Emily Davis</h5>
+            <div class="stars">★★★★★</div>
+            <p>Amazing experience from start to finish.<br>Top-notch support!</p>
+          </div>
+          <div class="carousel-item">
+            <h5>Chris Johnson</h5>
+            <div class="stars">★★★★★</div>
+            <p>So glad I gave it a try.<br>Now I'm a loyal user.</p>
+          </div>
+        </div>
+    
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span aria-hidden="true">❮</span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span aria-hidden="true">❯</span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    </div>
+    </div>
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const carousel = new bootstrap.Carousel('#testimonialCarousel', {
+    interval: 3500,
+    ride: 'carousel',
+    pause: false,
+    wrap: true
+  });
+</script>
+
+    
+    <script>
+      const track = document.getElementById('slideTrack');
+      track.addEventListener('mouseenter', () => {
+        track.style.animationPlayState = 'paused';
+      });
+      track.addEventListener('mouseleave', () => {
+        track.style.animationPlayState = 'running';
+      });
+    </script>
+      
+
+
+     
+{% endblock result %}

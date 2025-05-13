@@ -1,0 +1,237 @@
+{% load static %}
+{% load widget_tweaks %}
+<!doctype html>
+<html lang="en">
+  
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>{% block title %}Expert Assignment{% endblock title  %}</title>
+      <link rel="stylesheet" href="{% static 'css/style.css' %}">
+      <link rel="stylesheet" href="{% static 'css/assignment_form.css' %}">
+      <link rel="stylesheet" href="{% static 'css/gauranteed.css' %}">
+      <link rel="stylesheet" href="{% static 'css/why.css' %}">
+      <link rel="stylesheet" href="{% static 'css/order.css' %}">
+      <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+      <link rel="stylesheet" href="{% static 'css/about.css' %}">
+      <link rel="stylesheet" href="{% static 'css/result.css' %}">
+      <link rel="stylesheet" href="{% static 'css/megaoffer.css' %}">
+      <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon"/>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <link rel="stylesheet" href="{% static 'slick/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'slick/slick-theme.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+ 
+
+
+
+  </head>
+  <body class="bodybox bg-light">
+    
+    <nav class="navbar navbar-dark bg-dark fixed-top" >
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+      </label>       
+      <div class="logo">
+          <img src="{% static 'images/logo.jpg' %}" alt="Company Logo" style="height: 60px; width: auto;border-radius: 10px;">
+      </div>
+      <ul>
+          <li><a class="active" href="/home">Home</a></li>
+          <li><a href="/gauranteedMarks">Gauranteed Passing Marks</a></li>
+          <li><a href="/whyus">Why us</a></li>
+          <li><a href="/contact">Contact us</a></li>
+          <li><a href="/result">Result</a></li>
+          <li><a href="/order">Order</a></li>
+          <li><a href="/about">About us</a></li>
+          <li><a href="/megaoffer">Mega-Offers</a></li>
+      </ul>
+  </nav>
+  
+  
+    {% comment %} <section class="hero-section relative w-full h-screen overflow-hidden"style="display: flex;height:100vh;">
+        <video
+          src="{% static 'videos/video4.mp4' %}"
+          autoplay
+          loop
+          muted
+          playsinline
+          class="w-full h-[900px] object-cover absolute top-0 left-0 -z-10"
+        ></video>
+      <div class="overlay"></div>
+      <div class="container">
+        <h1 class="hero-title" data-aos="fade-up" data-aos-duration="1000" style="color: #000;">
+          <b>EXPERT ASSIGNMENT <br>HELPS</b>
+        </h1>
+        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000"style="color: #000;">
+          <b>ONE PLACE SOLUTION FOR ACADEMIC ASSIGNMENTS</b>
+        </p>
+        <div class="text-center mt-5"data-aos="zoom-in">
+          <a class="btn btn-success" href="/contact" role="button">Contact With Us Here</a>
+          </div>
+          <div class="text-center mt-3"data-aos="zoom-in">
+            <a class="btn btn-primary" href="/order" role="button">Order Here</a>
+            </div>
+      </div>
+    </section>  {% endcomment %}
+  
+{% comment %} for Pop up Form for sending email {% endcomment %}
+  {% include 'includes/assignment_form.html' %}
+
+
+    <div class="main-wrapper">
+    {%block home %} {% endblock home %}
+    {%block gauranteedMarks %} {% endblock gauranteedMarks %}
+    {%block whyus %} {% endblock whyus %}
+    {%block order %} {% endblock order %}
+    {%block contact %} {% endblock contact %}
+    {%block about %} {% endblock about %}
+    {%block result %} {% endblock result %}
+    {%block megaoffer %} {% endblock megaoffer %}
+    </div>
+    
+  
+   <footer>
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-md-3 mb-4" data-aos="fade-up">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="/base">Base</a></li>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/gauranteedMarks">Gauranteed Passing Marks</a></li>
+            <li><a href="/whyus">Why Us</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/order">Order </a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/result">Results</a></li>
+            <li><a href="/megaoffer">MegaOffers</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <h5 class="footer-title">Services</h5>
+          <ul class="footer-links">
+            <li><a href="#">Assignment Help</a></li>
+            <li><a href="#">Essay Writing Help</a></li>
+            <li><a href="#">Thesis Help</a></li>
+            <li><a href="#">Academic Help</a></li>
+            <li><a href="#">MBA Help</a></li>                   
+            <li><a href="#">Programming Help</a></li>
+            <li><a href="#">Dissertation Writing Help</a></li>
+            <li><a href="#">Homework Help</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <h5 class="footer-title">Others</h5>
+          <ul class="footer-links">
+            <li><a href="/list">Result List</a></li>
+            <li><a href="/result">Reviews & Testimonials</a></li>
+            <li><a href="/megaoffer">Megaoffer</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <h5 class="footer-title">Connect with us:</h5>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>  
+  </footer>
+  <footer class="custom-footer">
+    <div class="container">
+      <div class="row">
+        <!-- Left Column -->
+        <div class="col-md-6">
+          <div class="footer-title">Expert Assignment Helps</div>
+            <div class="footer-line"></div>
+            <div class="footer-subtext">Best Assignment Help Services</div>
+        </div>
+        <!-- Right Column -->
+        <div class="col-md-6">
+          <div class="footer-title">Location</div>
+          <div class="footer-contact">
+            Address: <span>225 Wenlock Road
+              London
+              N1 7GU
+              England</span> <br>
+            © 2025. <span>All rights reserved by Expert Assignment Helps Services</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    AOS.init();
+  </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          duration: 1000,
+          once: true
+        });
+      </script>
+      <script>
+        AOS.init({
+          duration: 1000,
+          once: true,
+        });
+      </script>
+ 
+
+      <!-- jQuery (required by Slick) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Slick Carousel JS -->
+<script src="{% static 'slick/slick.min.js' %}"></script>
+
+<!-- Initialize slick -->
+<script>
+  $(document).ready(function(){
+    $('.your-class').slick({
+      // your slick settings
+      autoplay: true,
+      dots: true
+    });
+  });
+</script>
+
+
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // Wait 3 seconds, then show the modal
+  setTimeout(function() {
+    var modal = new bootstrap.Modal(document.getElementById('assignmentModal'));
+    modal.show();
+  }, 3000);
+</script>
+
+
+    </body>
+  </html>
+  

@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block megaoffer %}
+{% load static %}
+
+<div class="container py-5 position-relative">
+  <div class="row align-items-center g-5"style="padding-top:30px">
+    
+    <!-- Text Section -->
+    <div class="col-md-6 fade-in"style="padding-left:20px;margin-left:30px">
+      <h1 class="display-5 fw-bold mb-4"style="font-family: 'Times New Roman', Times, serif;">
+        <span class="gradient-text">Mega Offer's</span><br>from Ours Company
+      </h1>
+      <p class="lead mb-4"style="font-family: 'Times New Roman', Times, serif;">Discover how our clients transformed their businesses with our solutions. Authentic testimonials and success stories that inspire.</p>
+      <div class="d-flex flex-wrap gap-3">
+        <a class="btn btn-primary btn-lg"style="font-family: 'Times New Roman', Times, serif;" href="/megaoffer" role="button">Views Offer's</a>
+        <a class="btn btn-outline-primary btn-lg"style="font-family: 'Times New Roman', Times, serif;" href="/list" role="button">Views Results</a>
+      </div>
+    </div>
+
+    <!-- Image + Testimonial Section -->
+    <div class="col-md-4 fade-in position-relative"style="padding-top:30px;margin-left:60px">
+      <div class="rounded shadow-lg overflow-hidden position-relative"data-aos="zoom-in"style="height:100%;width:100%">
+        <img src="{% static 'images/mega1.png' %}"
+             class="img-fluid rounded" alt="Happy customers"style="height:100%;width:100%; ">
+      </div>
+    </div>
+  </div>
+
+
+  <figure class="figure"data-aos="zoom-in">
+    <img src="{% static 'images/mega2.png' %}" alt="Mega2" class="figure-img img-fluid rounded "style="margin:50px;width:500px" data-aos="fade-right"alt="...">
+    <img src="{% static 'images/mega3.png' %}" alt="Mega3" class="figure-img img-fluid rounded"style="margin:50px;width:500px"data-aos="fade-left" alt="...">
+  </figure>
+  <figure class="figure">
+    <img src="{% static 'images/mega4.png' %}" alt="Mega4" class="figure-img img-fluid rounded "style="margin:50px;width:500px"data-aos="fade-right" alt="...">
+    <img src="{% static 'images/mega5.png' %}" alt="Mega5" class="figure-img img-fluid rounded"style="margin:50px;width:500px"data-aos="fade-left" alt="...">
+  </figure>
+  <figure class="figure d-flex justify-content-center flex-wrap">
+    <img src="{% static 'images/mega6.png' %}" 
+         alt="Mega6" 
+         class="figure-img img-fluid rounded m-6" 
+         style="width: 500px;margin:50px;" 
+         data-aos="fade-right">
+  
+    <img src="{% static 'images/mega7.png' %}" 
+         alt="Mega7" 
+         class="figure-img img-fluid rounded m-6" 
+         style="width: 500px;margin:50px;" 
+         data-aos="fade-left">
+  </figure>
+  
+  
+
+
+
+{% endblock megaoffer %}

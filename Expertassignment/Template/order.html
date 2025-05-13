@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+{% load widget_tweaks %}
+
+{% block order %}
+{% load static %}
+
+<!-- <section class="hero-section"style="background-image: url('{% static "images/bg14.avif" %}');height:600px;" >
+  <div class="container">
+    <h1 class="hero-title" data-aos="fade-down" data-aos-duration="1000" style="color: white;">
+      <b>EXPERT ASSIGNMENT <br>HELPS</b>
+    </h1>
+    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000"style="color: white;">
+      <b>ONE PLACE SOLUTION FOR ACADEMIC ASSIGNMENTS</b>
+    </p>
+  </div>
+</section> -->
+<div class="hero-section relative w-full h-screen overflow-hidden"style="height:1000px">
+  <video
+  src="{% static 'videos/video5.mp4' %}"
+  autoplay
+  loop
+  muted
+  playsinline
+  class="w-full h-[1000px] object-cover absolute top-0 left-0 -z-10"style="height:1000px"
+></video>
+<div class="overlay">
+
+<div class="form-section" data-aos="zoom-in">
+  <h2 class="text-center mb-4">Place your <span class="text-primary">Assignment</span> Here <span class="text-warning">!</span></h2>
+  
+  <form method="POST"  action="https://formspree.io/f/myzwedbd" class="row g-3 needs-validation" novalidate>
+    {% csrf_token %}
+    
+    <!-- Name Field -->
+    <div class="mb-3">
+      <label for="{{ form.name.id_for_label }}" class="form-label">Name</label>
+      {{ form.name|add_class:"form-control" }}
+      {% if form.name.errors %}
+        <div class="invalid-feedback d-block">{{ form.name.errors.0 }}</div>
+      {% endif %}
+    </div>
+
+    <!-- Email Field -->
+    <div class="mb-3">
+      <label for="{{ form.email.id_for_label }}" class="form-label">Email</label>
+      {{ form.email|add_class:"form-control" }}
+      {% if form.email.errors %}
+        <div class="invalid-feedback d-block">{{ form.email.errors.0 }}</div>
+      {% endif %}
+    </div>
+
+    <!-- Phone Field -->
+    <div class="mb-3">
+      <label for="{{ form.phone.id_for_label }}" class="form-label">Phone</label>
+      {{ form.phone|add_class:"form-control" }}
+      {% if form.phone.errors %}
+        <div class="invalid-feedback d-block">{{ form.phone.errors.0 }}</div>
+      {% endif %}
+    </div>
+
+    <!-- Title Field -->
+    <div class="mb-3">
+      <label for="{{ form.title.id_for_label }}" class="form-label">Assignment Title</label>
+      {{ form.title|add_class:"form-control" }}
+      {% if form.title.errors %}
+        <div class="invalid-feedback d-block">{{ form.title.errors.0 }}</div>
+      {% endif %}
+    </div>
+
+    <!-- Word Count Field -->
+    <div class="mb-3">
+      <label for="{{ form.word_count.id_for_label }}" class="form-label">Word Count</label>
+      {{ form.word_count|add_class:"form-control" }}
+      {% if form.word_count.errors %}
+        <div class="invalid-feedback d-block">{{ form.word_count.errors.0 }}</div>
+      {% endif %}
+    </div>
+
+    <!-- Submit Button -->
+    <div class="text-center mt-4">
+      <button type="submit" class="btn btn-primary px-5">SUBMIT</button>
+    </div>
+  </form>
+</div>
+</div>
+
+
+
+
+<!-- JS and AOS Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000 });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<script>
+  const phoneInput = document.querySelector("#phone");
+  window.intlTelInput(phoneInput, {
+    initialCountry: "in",
+    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+  });
+</script>
+{% endblock order %}
+
+
+
+  
